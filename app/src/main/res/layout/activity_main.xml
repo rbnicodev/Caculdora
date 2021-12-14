@@ -288,6 +288,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/btX"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@id/gh4"
         app:layout_constraintEnd_toStartOf="@id/gv5"
         app:layout_constraintStart_toEndOf="@id/gv4"
@@ -304,12 +305,12 @@
         app:layout_constraintStart_toEndOf="@id/gv1"
         app:layout_constraintTop_toBottomOf="@id/gh6" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <androidx.appcompat.widget.AppCompatImageButton
         android:id="@+id/btBorrar"
         style="@style/SymbolButton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:text="@string/btDelete"
+        android:src="@drawable/borrar"
         app:layout_constraintBottom_toTopOf="@id/gh5"
         app:layout_constraintEnd_toStartOf="@id/gv3"
         app:layout_constraintStart_toEndOf="@id/gv2"
@@ -341,7 +342,7 @@
         android:id="@+id/screen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxWidth="370dp"
+        android:maxWidth="330dp"
         android:textSize="40sp"
         android:text="@string/bt0"
         android:textAlignment="viewEnd"
@@ -350,5 +351,20 @@
         app:layout_constraintEnd_toStartOf="@id/gv5"
         app:layout_constraintTop_toBottomOf="@id/gh7"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/screenSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text=""
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/gh6"
+        app:layout_constraintEnd_toStartOf="@id/gv2"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gh7"
+        app:layout_constraintVertical_bias="0.497" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
 
