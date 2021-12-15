@@ -255,7 +255,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener
             Toast.makeText(this, e.message, Toast.LENGTH_SHORT)
         }
 
-
     }
 
     private fun equalPressed()
